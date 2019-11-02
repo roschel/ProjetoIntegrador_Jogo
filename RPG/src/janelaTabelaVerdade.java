@@ -37,6 +37,8 @@ public class janelaTabelaVerdade {
 				try {
 					janelaTabelaVerdade window = new janelaTabelaVerdade();
 					window.frame.setVisible(true);
+					window.frame.setAlwaysOnTop(true);
+                                        window.frame.setLocationRelativeTo(null);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
