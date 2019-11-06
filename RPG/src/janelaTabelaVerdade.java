@@ -344,7 +344,7 @@ public class janelaTabelaVerdade {
 		
 		JButton btnVerificarResposta = new JButton("Verificar resposta");
 		btnVerificarResposta.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnVerificarResposta.setEnabled(false);
+		btnVerificarResposta.setEnabled(true);
 		btnVerificarResposta.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}

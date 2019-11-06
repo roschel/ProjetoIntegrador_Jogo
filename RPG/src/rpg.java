@@ -292,6 +292,14 @@ public class rpg {
 		
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
 	// ******Danilo******//
 	static Scanner input = new Scanner(System.in);
 	static Scanner sc = new Scanner(System.in);
@@ -471,7 +479,7 @@ public class rpg {
 		return contador;
 	}
 
-	
+	//EXERCÍCIO 5
 	static void historiadesafio5() {
 		
 		System.out.println("Já chegamos ao nosso quinto jogo\n"
@@ -1524,9 +1532,11 @@ public class rpg {
 				
 				
 				
-				
 				break;
+				
 			case 4:
+				//Aqui é a saida do jogo.
+				
 				break;
 			default:
 				System.out.println("Opção inválida, tente novamente.");
