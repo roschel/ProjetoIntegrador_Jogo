@@ -326,7 +326,6 @@ public class rpg {
 	
 	
 	
-	
 	// ******DANILO******//
 	static Scanner input = new Scanner(System.in);
 	static Scanner sc = new Scanner(System.in);
