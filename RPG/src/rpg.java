@@ -24,16 +24,14 @@ public class rpg {
 	//*****JOÃO******
 	
 	//Pontuação
-	static int [] pontuacao(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j) {
-		int [] pontuacao = new int [10];
-		int soma = 0;
+	static int pontuacao(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j) {
+		int soma;
+
 		
-		for (int k = 0; k < pontuacao.length; k++) {
-			pontuacao[i]=soma+pontuacao[i];
-		}
+		soma=a+b+c+d+e+f+g+h+i+j;
 		
 		
-		return pontuacao;
+		return soma;
 	}
 	
 	
@@ -41,9 +39,9 @@ public class rpg {
 	
 	
 	//EXERCÍCIO 1
-	static void fExemploDesafio01() {
+	static int fExemploDesafio01() {
 
-		int desafio1;
+		int desafio1=0;
 		String entradaDesafio1 = "";
 
 		boolean loopDesafio1 = true, loopDesafio555555 = true;
@@ -67,6 +65,7 @@ public class rpg {
 				System.out.println(" ");
 			}
 		}
+		return desafio1;
 	}
 
 	static void fFeedbackPositivoDesafio1() {
@@ -108,150 +107,170 @@ public class rpg {
 			case "A":
 				if (alternativas.get(0).equals("215") && contador == 0) {
 					contador = 1;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 3;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(0).equals("215") && contador == 1) {
 					contador = 2;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 2;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(0).equals("215") && contador == 2) {
 					contador = 3;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 1;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----");
-					fExemploDesafio01();
+					System.out.println("---- FEEDBACK ----\n"
+							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
+							+ "\n"
+							+ "Tente novamente!\n");
 				}
 				break;
 			case "b":
 			case "B":
 				if (alternativas.get(1).equals("215") && contador == 0) {
 					contador = 1;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 3;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(1).equals("215") && contador == 1) {
 					contador = 2;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 2;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(1).equals("215") && contador == 2) {
 					contador = 3;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 1;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----");
-					fExemploDesafio01();
+					System.out.println("---- FEEDBACK ----\n"
+							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
+							+ "\n"
+							+ "Tente novamente!\n");
 				}
 				break;
 			case "c":
 			case "C":
 				if (alternativas.get(2).equals("215") && contador == 0) {
 					contador = 1;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 3;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(2).equals("215") && contador == 1) {
 					contador = 2;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 2;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(2).equals("215") && contador == 2) {
 					contador = 3;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 1;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----");
-					fExemploDesafio01();
+					System.out.println("---- FEEDBACK ----\n"
+							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
+							+ "\n"
+							+ "Tente novamente!\n");
 				}
 				break;
 			case "d":
 			case "D":
 				if (alternativas.get(3).equals("215") && contador == 0) {
 					contador = 1;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 3;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(3).equals("215") && contador == 1) {
 					contador = 2;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 2;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(3).equals("215") && contador == 2) {
 					contador = 3;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 1;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----");
-					fExemploDesafio01();
+					System.out.println("---- FEEDBACK ----\n"
+							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
+							+ "\n"
+							+ "Tente novamente!\n");
 				}
 				break;
 			case "e":
 			case "E":
 				if (alternativas.get(4).equals("215") && contador == 0) {
 					contador = 1;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 3;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(4).equals("215") && contador == 1) {
 					contador = 2;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 2;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else if (alternativas.get(4).equals("215") && contador == 2) {
 					contador = 3;
-					System.out.println("Você acertou na " + contador + "a tentativa!");
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
 					nota1 = 1;
-					System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos\n");
 					saidaLoop = false;
 					fFeedbackPositivoDesafio1();
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----");
-					fExemploDesafio01();
+					System.out.println("---- FEEDBACK ----\n"
+							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
+							+ "\n"
+							+ "Tente novamente!\n");
 				}
 				break;
 
@@ -1430,14 +1449,14 @@ public class rpg {
 		// TODO Auto-generated method stub
 
 		// Declarando variáveis
-		int opção, hdf1, rdesafio3;
+		// variável op é a variável que vai dar a opção desejada no menu.
+		int op;
 		String name, clube;
+		
 
 		introdução();
 
 
-		// variável op é a variável que vai dar a opção desejada no menu.
-		int op;
 
 		do {
 
@@ -1474,7 +1493,7 @@ public class rpg {
 				// ir para o jogo
 				
 				int pontuacaoDesafio1,pontuacaoDesafio2,pontuacaoDesafio3,pontuacaoDesafio4,pontuacaoDesafio5,pontuacaoDesafio6,pontuacaoDesafio7,pontuacaoDesafio8,pontuacaoDesafio9,pontuacaoDesafio10;
-				
+				int pontuacaoCampeonato;
 				
 				System.out.println("\nVamos jogar\n" + "\n");
 				name = nomejogador();
@@ -1482,34 +1501,39 @@ public class rpg {
 				historiadesafio1();
 				
 				//********DESAFIO 1**********
-				fExemploDesafio01();
-				pontuacaoDesafio1=fdesafio01();
-				pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-				System.out.println(pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0));
+				pontuacaoDesafio1=fExemploDesafio01();
+				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
 				
 				
 				//********DESAFIO 2**********
 				pontuacaoDesafio2=ex2();
-				pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, 0, 0, 0, 0, 0, 0, 0, 0);
+				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, 0, 0, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
+				
 				
 				
 				//********DESAFIO 3**********
 				pontuacaoDesafio3 = fdesafio3();
-				pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, 0, 0, 0, 0, 0, 0, 0);
+				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, 0, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
 				
 				
 				//********DESAFIO 4**********
 				exemploTabelaVerdade();
 				janelaTabelaVerdade.main(null);
 				pontuacaoDesafio4=janelaTabelaVerdade.contador;
-				pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, 0, 0, 0, 0, 0, 0);
+				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
 				
 				
 				//********DESAFIO 5**********
 				historiadesafio5();
 				exdesafio5();
 				pontuacaoDesafio5 = fdesafio5();
-				pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, 0, 0, 0);
+				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
+			
 				
 				
 				//********DESAFIO 6**********
@@ -1526,7 +1550,8 @@ public class rpg {
 				
 				//********DESAFIO 8**********
 				pontuacaoDesafio8=ex8();
-				pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, pontuacaoDesafio8, 0, 0);
+				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, pontuacaoDesafio8, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
 				
 				
 				
