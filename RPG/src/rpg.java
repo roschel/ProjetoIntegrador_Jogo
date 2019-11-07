@@ -17,6 +17,12 @@ import javax.swing.border.LineBorder;
 
 public class rpg {
 
+	
+	
+	
+	
+	//*****JOÃO******
+	
 	//Pontuação
 	static int [] pontuacao(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j) {
 		int [] pontuacao = new int [10];
@@ -64,7 +70,8 @@ public class rpg {
 	}
 
 	static void fFeedbackPositivoDesafio1() {
-		System.out.println("Parabéns! Você povavelmente fez isto:\n" + "-----* Resolução do desafio *-----\n"
+		System.out.println("Parabéns! Você povavelmente fez isto:\n" 
+				+ "-----* Resolução do desafio *-----\n"
 				+ "1*128 + 1*64 + 0*32 + 1*16 + 0*8 + 1*4 + 1*2+ 1*1 = 215\n");
 	}
 
@@ -293,6 +300,7 @@ public class rpg {
 	}
 
 	
+	//EXERCICIO 6
 	
 	
 	
@@ -300,7 +308,7 @@ public class rpg {
 	
 	
 	
-	// ******Danilo******//
+	// ******DANILO******//
 	static Scanner input = new Scanner(System.in);
 	static Scanner sc = new Scanner(System.in);
 
@@ -645,7 +653,7 @@ public class rpg {
 	
 	
 	
-	// ******Paulo******//
+	// ******PAULO******//
 	static Scanner ler = new Scanner(System.in);
 	private static int resultado;
 
@@ -1477,6 +1485,7 @@ public class rpg {
 				fExemploDesafio01();
 				pontuacaoDesafio1=fdesafio01();
 				pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+				System.out.println(pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0));
 				
 				
 				//********DESAFIO 2**********
