@@ -20,6 +20,12 @@ import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
 import java.awt.Color;
 import javax.swing.border.LineBorder;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JTabbedPane;
+import javax.swing.JToolBar;
 
 public class CircuitoLogico extends JFrame {
 
@@ -51,70 +57,50 @@ public class CircuitoLogico extends JFrame {
 	// S = ((AC)'+B+D)' + (ACD)' * C
 	public CircuitoLogico() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 958, 401);
+		setBounds(100, 100, 647, 442);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(34, 26, 482, 175);
-		contentPane.add(lblNewLabel);
-		lblNewLabel.setIcon(new ImageIcon("D:\\joaom\\Pictures\\Circuito logico.jpg"));
-		// labFotoMembros.setIcon(new
-		// ImageIcon(image.getScaledInstance(labFotoMembros.getWidth(),labFotoMembros.getHeight(),
-		// Image.SCALE_DEFAULT)));
-
-		JRadioButton rdbtnA = new JRadioButton("A");
-		buttonGroup.add(rdbtnA);
-		rdbtnA.setBounds(599, 43, 248, 25);
-		contentPane.add(rdbtnA);
-
-		JRadioButton rdbtnB = new JRadioButton("B");
-		buttonGroup.add(rdbtnB);
-		rdbtnB.setBounds(599, 73, 248, 25);
-		contentPane.add(rdbtnB);
-
-		JRadioButton rdbtnC = new JRadioButton("C");
-		buttonGroup.add(rdbtnC);
-		rdbtnC.setBounds(599, 103, 248, 25);
-		contentPane.add(rdbtnC);
-
-		JRadioButton rdbtnD = new JRadioButton("D");
-		buttonGroup.add(rdbtnD);
-		rdbtnD.setBounds(599, 133, 248, 25);
-		contentPane.add(rdbtnD);
-
-		JRadioButton rdbtnE = new JRadioButton("E");
-		buttonGroup.add(rdbtnE);
-		rdbtnE.setBounds(599, 163, 248, 25);
-		contentPane.add(rdbtnE);
-
-		JLabel lblUmElementoBarrado = new JLabel(
-				"Um elemento barrado também pode ser expresso por apóstrofo. Exemplo A' = A barrado");
-		lblUmElementoBarrado.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblUmElementoBarrado.setBounds(34, 13, 658, 16);
-		contentPane.add(lblUmElementoBarrado);
-
-		JLabel lblParabnsVocAcertou = new JLabel("Parabéns, você acertou!");
-		lblParabnsVocAcertou.setVisible(false);
-		lblParabnsVocAcertou.setBorder(new LineBorder(new Color(0, 0, 0)));
-		lblParabnsVocAcertou.setBackground(Color.GREEN);
-		lblParabnsVocAcertou.setOpaque(true);
-		lblParabnsVocAcertou.setHorizontalAlignment(SwingConstants.CENTER);
-		lblParabnsVocAcertou.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblParabnsVocAcertou.setBounds(599, 252, 187, 25);
-		contentPane.add(lblParabnsVocAcertou);
-
-		JLabel lblVocErrouTente = new JLabel("Você errou, tente novamente.");
-		lblVocErrouTente.setVisible(false);
-		lblVocErrouTente.setOpaque(true);
-		lblVocErrouTente.setHorizontalAlignment(SwingConstants.CENTER);
-		lblVocErrouTente.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblVocErrouTente.setBorder(new LineBorder(new Color(0, 0, 0)));
-		lblVocErrouTente.setBackground(Color.RED);
-		lblVocErrouTente.setBounds(599, 290, 224, 25);
-		contentPane.add(lblVocErrouTente);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setBounds(0, 0, 629, 395);
+		contentPane.add(tabbedPane);
+		
+		JPanel panel = new JPanel();
+		tabbedPane.addTab("Exemplo desafio 6", null, panel, null);
+		panel.setLayout(null);
+		
+		JLabel lblPortaNand = new JLabel("Porta NAND");
+		lblPortaNand.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblPortaNand.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPortaNand.setBounds(12, 23, 81, 16);
+		panel.add(lblPortaNand);
+		
+		JLabel lblPortaNand_1 = new JLabel("");
+		lblPortaNand_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPortaNand_1.setIcon(new ImageIcon("C:\\Users\\joaom\\Desktop\\porta and.jpg"));
+		lblPortaNand_1.setBounds(46, 65, 250, 170);
+		panel.add(lblPortaNand_1);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setEnabled(false);
+		tabbedPane.addTab("Desafio 6", null, panel_1, null);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Um elemento barrado também pode ser expresso por apóstrofo. Exemplo A' = A barrado");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblNewLabel.setBounds(12, 13, 600, 28);
+		panel_1.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBounds(63, 87, 507, 172);
+		panel_1.add(lblNewLabel_1);
+		lblNewLabel_1.setIcon(new ImageIcon("D:\\joaom\\Pictures\\Circuito logico.jpg"));
+	
+		
 
 		List alternativas = new ArrayList();
 
@@ -126,34 +112,6 @@ public class CircuitoLogico extends JFrame {
 		alternativas.add("S = ((A*C)'+B+D)' + (A*C*D)'");
 
 		Collections.shuffle(alternativas);
-		rdbtnA.setText("A) " + alternativas.get(0));
-		rdbtnB.setText("B) " + alternativas.get(1));
-		rdbtnC.setText("C) " + alternativas.get(2));
-		rdbtnD.setText("D) " + alternativas.get(3));
-		rdbtnE.setText("E) " + alternativas.get(4));
-
-		JButton btnVerificarResposta = new JButton("Verificar Resposta");
-		btnVerificarResposta.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				if (rdbtnA.isSelected() && alternativas.get(0).equals("S = ((A*C)'+B+D)' + (A*C*D)' * C")) {
-					System.out.println("Acertou");
-				}
-				if (rdbtnB.isSelected() && alternativas.get(1).equals("S = ((A*C)'+B+D)' + (A*C*D)' * C")) {
-					System.out.println("Acertou");
-				}
-				if (rdbtnC.isSelected() && alternativas.get(2).equals("S = ((A*C)'+B+D)' + (A*C*D)' * C")) {
-					System.out.println("Acertou");
-				}
-				if (rdbtnD.isSelected() && alternativas.get(3).equals("S = ((A*C)'+B+D)' + (A*C*D)' * C")) {
-					System.out.println("Acertou");
-				}
-				if (rdbtnE.isSelected() && alternativas.get(4).equals("S = ((A*C)'+B+D)' + (A*C*D)' * C")) {
-					System.out.println("Acertou");
-				}
-			}
-		});
-		btnVerificarResposta.setBounds(599, 197, 155, 25);
-		contentPane.add(btnVerificarResposta);
 
 		System.out.println("funcionou!");
 

@@ -17,31 +17,21 @@ import javax.swing.border.LineBorder;
 
 public class rpg {
 
-	
-	
-	
-	
-	//*****JOÃO******
-	
-	//Pontuação
+	// *****JOÃO******
+
+	// Pontuação
 	static int pontuacao(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j) {
 		int soma;
 
-		
-		soma=a+b+c+d+e+f+g+h+i+j;
-		
-		
+		soma = a + b + c + d + e + f + g + h + i + j;
+
 		return soma;
 	}
-	
-	
-	
-	
-	
-	//EXERCÍCIO 1
+
+	// EXERCÍCIO 1
 	static int fExemploDesafio01() {
 
-		int desafio1=0;
+		int desafio1 = 0;
 		String entradaDesafio1 = "";
 
 		boolean loopDesafio1 = true, loopDesafio555555 = true;
@@ -69,8 +59,7 @@ public class rpg {
 	}
 
 	static void fFeedbackPositivoDesafio1() {
-		System.out.println("Parabéns! Você povavelmente fez isto:\n" 
-				+ "-----* Resolução do desafio *-----\n"
+		System.out.println("Parabéns! Você povavelmente fez isto:\n" + "-----* Resolução do desafio *-----\n"
 				+ "1*128 + 1*64 + 0*32 + 1*16 + 0*8 + 1*4 + 1*2+ 1*1 = 215\n");
 	}
 
@@ -126,15 +115,14 @@ public class rpg {
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----\n"
-							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
 					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
-							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
 							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
 							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
-							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
-							+ "\n"
-							+ "Tente novamente!\n");
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
 				}
 				break;
 			case "b":
@@ -160,15 +148,14 @@ public class rpg {
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----\n"
-							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
 					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
-							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
 							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
 							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
-							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
-							+ "\n"
-							+ "Tente novamente!\n");
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
 				}
 				break;
 			case "c":
@@ -194,15 +181,14 @@ public class rpg {
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----\n"
-							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
 					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
-							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
 							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
 							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
-							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
-							+ "\n"
-							+ "Tente novamente!\n");
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
 				}
 				break;
 			case "d":
@@ -228,15 +214,14 @@ public class rpg {
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----\n"
-							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
 					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
-							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
 							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
 							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
-							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
-							+ "\n"
-							+ "Tente novamente!\n");
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
 				}
 				break;
 			case "e":
@@ -262,15 +247,14 @@ public class rpg {
 				} else {
 					System.out.println("Resposta errada, tente novamente.\n");
 					contador++;
-					System.out.println("---- FEEDBACK ----\n"
-							+ "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
 					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
-							+ "Utilizar a tabela de potências de 2:\n" + "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
 							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
 							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
-							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n"
-							+ "\n"
-							+ "Tente novamente!\n");
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
 				}
 				break;
 
@@ -289,42 +273,594 @@ public class rpg {
 		return nota1;
 	}
 
-	//EXERCÍCIO 4
+	// EXERCÍCIO 4
 	static void exemploTabelaVerdade() {
-	
-		
-		System.out.println("Tabela verdade é um dispositivo utilizado no estudo da\r\n"
+
+		System.out.println("\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
 				+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
 				+ "lógico de uma proposição, isto é, saber quando uma sentença é\r\n"
 				+ "verdadeira ou falsa. Em lógica, as proposições representam\r\n"
 				+ "pensamentos completos e indicam afirmações de fatos ou ideias.\r\n" + ""
 				+ "A montagem da tabela se da de forma que:"
 				+ "Os elementos A, B e C se modificam conforme sua potência. Ou seja:\r\n" 
-				+ "2^2 2^1 2^0\r\n" 
-				+ "4    2    1\r\n"
-				+ "" + "Significa que o elemento A se alterna a cada 4 repetições.\r\n"
-				+ "O elemento B se alterna a cada 2 repetições." + "O elemento C se alterna a cada 1 repetição.\r\n" +""
+				+ "2^2 2^1 2^0\r\n"
+				+ "4    2    1\r\n" 
+				+ "" 
+				+ "Significa que o elemento A se alterna a cada 4 repetições.\r\n"
+				+ "O elemento B se alterna a cada 2 repetições." + "O elemento C se alterna a cada 1 repetição.\r\n"
+				+ "" 
 				+ "A | B | C | S\r\n" 
 				+ "0 | 0 | 0 | S1\r\n" 
 				+ "0 | 0 | 1 | S2\r\n" 
-				+ "0 | 1 | 0 | S3\r\n" 
-				+ "0 | 1 | 1 | S4\r\n"
+				+ "0 | 1 | 0 | S3\r\n"
+				+ "0 | 1 | 1 | S4\r\n" 
 				+ "1 | 0 | 0 | S5\r\n" 
 				+ "1 | 0 | 1 | S6\r\n" 
-				+ "1 | 1 | 0 | S7\r\n" 
+				+ "1 | 1 | 0 | S7\r\n"
 				+ "1 | 1 | 1 | S8\r\n");
 
 		System.out.println("");
-		
+
 	}
 
-	
-	//EXERCICIO 6
-	
-	
-	
-	
-	
+	static int fDesafio04() {
+		// Declarando variáveis
+		int nota1 = 0, contador = 0;
+		boolean saidaLoop = true;
+		String a = "A | B | C | S\n"+
+				"   0 | 0 | 0 | 0\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 1\r\n" + 
+				"   1 | 0 | 0 | 0\r\n" + 
+				"   1 | 0 | 1 | 0\r\n" + 
+				"   1 | 1 | 0 | 1\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		// a = resposta certa
+		String b="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		
+		String c="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		
+		String d="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		
+		String e="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		String resposta="";
+		
+		List alternativas = new ArrayList();
+
+		// Declarando opções de resposta
+		alternativas.add(a); // resposta correta
+		alternativas.add(b);
+		alternativas.add(c);
+		alternativas.add(d);
+		alternativas.add(e);
+
+		do {
+
+			Collections.shuffle(alternativas);
+			System.out.println("Dada a equação S = AB + A'C, qual tabela verdade representa a equação?");
+			System.out.println("a) " + alternativas.get(0));
+			System.out.println("b) " + alternativas.get(1));
+			System.out.println("c) " + alternativas.get(2));
+			System.out.println("d) " + alternativas.get(3));
+			System.out.println("e) " + alternativas.get(4)+"\n");
+			
+			
+			System.out.print("Escolha uma alternativa: ");
+			resposta = sc.next();
+
+			switch (resposta) {
+			case "a":
+			case "A":
+				if (alternativas.get(0).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(0).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(0).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "b":
+			case "B":
+				if (alternativas.get(1).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(1).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(1).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "c":
+			case "C":
+				if (alternativas.get(2).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(2).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(2).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "d":
+			case "D":
+				if (alternativas.get(3).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(3).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(3).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "e":
+			case "E":
+				if (alternativas.get(4).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(4).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(4).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+
+			default:
+				break;
+			}
+
+		} while (saidaLoop && contador != 3);
+
+		if (contador == 3 && nota1 == 0) {
+			System.out.println("Você não acertou em nenhuma das 3 tentativas.");
+			System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos");
+			nota1 = 0;
+		}
+
+		return nota1;
+	}
+
+	// EXERCICIO 6
+	static void exemploExercicio6() {
+
+		System.out.println("\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
+				+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
+				+ "lógico de uma proposição, isto é, saber quando uma sentença é\r\n"
+				+ "verdadeira ou falsa. Em lógica, as proposições representam\r\n"
+				+ "pensamentos completos e indicam afirmações de fatos ou ideias.\r\n" + ""
+				+ "A montagem da tabela se da de forma que:"
+				+ "Os elementos A, B e C se modificam conforme sua potência. Ou seja:\r\n" 
+				+ "2^2 2^1 2^0\r\n"
+				+ "4    2    1\r\n" 
+				+ "" 
+				+ "Significa que o elemento A se alterna a cada 4 repetições.\r\n"
+				+ "O elemento B se alterna a cada 2 repetições." + "O elemento C se alterna a cada 1 repetição.\r\n"
+				+ "" 
+				+ "A | B | C | S\r\n" 
+				+ "0 | 0 | 0 | S1\r\n" 
+				+ "0 | 0 | 1 | S2\r\n" 
+				+ "0 | 1 | 0 | S3\r\n"
+				+ "0 | 1 | 1 | S4\r\n" 
+				+ "1 | 0 | 0 | S5\r\n" 
+				+ "1 | 0 | 1 | S6\r\n" 
+				+ "1 | 1 | 0 | S7\r\n"
+				+ "1 | 1 | 1 | S8\r\n");
+
+		System.out.println("");
+
+	}
+
+
+	static int fDesafio06() {
+		// Declarando variáveis
+		int nota1 = 0, contador = 0;
+		boolean saidaLoop = true;
+		String a = "A | B | C | S\n"+
+				"   0 | 0 | 0 | 0\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 1\r\n" + 
+				"   1 | 0 | 0 | 0\r\n" + 
+				"   1 | 0 | 1 | 0\r\n" + 
+				"   1 | 1 | 0 | 1\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		// a = resposta certa
+		String b="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		
+		String c="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		
+		String d="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		
+		String e="\n"+
+				"   A | B | C | S\n"+
+				"   0 | 0 | 0 | 1\r\n" + 
+				"   0 | 0 | 1 | 1\r\n" + 
+				"   0 | 1 | 0 | 0\r\n" + 
+				"   0 | 1 | 1 | 0\r\n" + 
+				"   1 | 0 | 0 | 1\r\n" + 
+				"   1 | 0 | 1 | 1\r\n" + 
+				"   1 | 1 | 0 | 0\r\n" + 
+				"   1 | 1 | 1 | 1\r\n";
+		String resposta="";
+		
+		List alternativas = new ArrayList();
+
+		// Declarando opções de resposta
+		alternativas.add(a); // resposta correta
+		alternativas.add(b);
+		alternativas.add(c);
+		alternativas.add(d);
+		alternativas.add(e);
+
+		do {
+
+			Collections.shuffle(alternativas);
+			System.out.println("Dada a equação S = AB + A'C, qual tabela verdade representa a equação?");
+			System.out.println("a) " + alternativas.get(0));
+			System.out.println("b) " + alternativas.get(1));
+			System.out.println("c) " + alternativas.get(2));
+			System.out.println("d) " + alternativas.get(3));
+			System.out.println("e) " + alternativas.get(4)+"\n");
+			
+			
+			System.out.print("Escolha uma alternativa: ");
+			resposta = sc.next();
+
+			switch (resposta) {
+			case "a":
+			case "A":
+				if (alternativas.get(0).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(0).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(0).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "b":
+			case "B":
+				if (alternativas.get(1).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(1).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(1).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "c":
+			case "C":
+				if (alternativas.get(2).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(2).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(2).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "d":
+			case "D":
+				if (alternativas.get(3).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(3).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(3).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+			case "e":
+			case "E":
+				if (alternativas.get(4).equals(a) && contador == 0) {
+					contador = 1;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 3;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(4).equals(a) && contador == 1) {
+					contador = 2;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 2;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else if (alternativas.get(4).equals(a) && contador == 2) {
+					contador = 3;
+					System.out.println("Você acertou na " + contador + "a tentativa!\r\n");
+					nota1 = 1;
+					saidaLoop = false;
+					fFeedbackPositivoDesafio1();
+				} else {
+					System.out.println("Resposta errada, tente novamente.\n");
+					contador++;
+					System.out.println(
+							"---- FEEDBACK ----\n" + "Vamos te ajudar! Aqui vai o exemplo de resolução novamente:");
+					System.out.println("Para converter um número binário para um número decimal, é necessário:\n"
+							+ "Utilizar a tabela de potências de 2:\n"
+							+ "... 2^8   2^7   2^6  2^5  2^4  2^3  2^2  2^1  2^0.\n"
+							+ "    256   128   64   32   16    8    4    2    1.\n" + "\n"
+							+ "Por exemplo, para um número binário 011, temos 3 bits. Logo, a conversão será:\n"
+							+ "0*4 + 1*2 + 1*1 = 0 + 2 + 1 = 3\n" + "\n" + "Tente novamente!\n");
+				}
+				break;
+
+			default:
+				break;
+			}
+
+		} while (saidaLoop && contador != 3);
+
+		if (contador == 3 && nota1 == 0) {
+			System.out.println("Você não acertou em nenhuma das 3 tentativas.");
+			System.out.println("Sua pontuação no campeonato é: " + nota1 + " pontos");
+			nota1 = 0;
+		}
+
+		return nota1;
+	}
 	
 	// ******DANILO******//
 	static Scanner input = new Scanner(System.in);
@@ -388,7 +924,7 @@ public class rpg {
 				+ "e resolver o seguinte desafio acerca de números binários.\n" + "\n");
 	}
 
-	//EXERCÍCIO 3
+	// EXERCÍCIO 3
 	static void exdesafio3() {
 		System.out.println(
 				"Para realizar a multiplicação de números binários você, você deverá utilizar-se das tabelas abaixo:\n"
@@ -505,85 +1041,69 @@ public class rpg {
 		return contador;
 	}
 
-	//EXERCÍCIO 5
+	// EXERCÍCIO 5
 	static void historiadesafio5() {
-		
-		System.out.println("Já chegamos ao nosso quinto jogo\n"
-				+ "O nosso primeiro adversário será o Goiás, do Estado de Goiás\n"
-				+ "Para vencê-lo você terá que estudar a estratégia passada pelo treinador\n"
-				+ "e simplicar a expressão booleana que será apresentada.\n"
-				+ "\n");
-		}
-		
+
+		System.out.println(
+				"Já chegamos ao nosso quinto jogo\n" + "O nosso primeiro adversário será o Goiás, do Estado de Goiás\n"
+						+ "Para vencê-lo você terá que estudar a estratégia passada pelo treinador\n"
+						+ "e simplicar a expressão booleana que será apresentada.\n" + "\n");
+	}
+
 	static void exdesafio5() {
-		System.out.println("Para realizar a simplicação da expressão booleana que será apresentada, utilize-se dos seguintes postulados e propriedades: \n"
-				+ "Postulados: \n"
-				+ "A . 0 = 0      A + O = A      A + 1 = 1      A . 1 = A\n"
-				+ "A + A' = 1     A . A' = 0     A + A = A      A . A = A\n"
-				+ "Propriedade Distributiva:\n"
-				+ "A. (B +) = A . B + A . C\n"
-				+ "Propriedade Comutativa:\n"
-				+ "A + B = B + A         A . B = B . A\n"
-				+ "Propriedade Associativa:\n"
-				+ "(A + B) + C = A + (B + C)        (A . B) . C = A . (B . C)\n"
-				+ "Teorema de De Morgan:\n"
-				+ "A' . B' . C' = (A+B+C)'          (A' + B' + C' = (A.B.C)'\n");
-		
+		System.out.println(
+				"Para realizar a simplicação da expressão booleana que será apresentada, utilize-se dos seguintes postulados e propriedades: \n"
+						+ "Postulados: \n" + "A . 0 = 0      A + O = A      A + 1 = 1      A . 1 = A\n"
+						+ "A + A' = 1     A . A' = 0     A + A = A      A . A = A\n" + "Propriedade Distributiva:\n"
+						+ "A. (B +) = A . B + A . C\n" + "Propriedade Comutativa:\n"
+						+ "A + B = B + A         A . B = B . A\n" + "Propriedade Associativa:\n"
+						+ "(A + B) + C = A + (B + C)        (A . B) . C = A . (B . C)\n" + "Teorema de De Morgan:\n"
+						+ "A' . B' . C' = (A+B+C)'          (A' + B' + C' = (A.B.C)'\n");
+
 		System.out.println("Por exemplo, a simplificação da expressão A + A.B, ficaria da seguinte forma:\n"
-				+ "A + A.B =\n"
-				+ "A . (1 + B) = \n"
-				+ "A . 1 = \n"
-				+ "A\n"
+				+ "A + A.B =\n" + "A . (1 + B) = \n" + "A . 1 = \n" + "A\n"
 				+ "Neste caso foram utilizados a propriedade distributiva e o postulado de adição.\n");
 	}
-	
+
 	static void feedbacknegativo() {
-		
+
 		System.out.println("Você errou, verifique novamente o exemplo dado anteriormente.");
-		
-		System.out.println("A simplificação da expressão A + A.B, ficaria da seguinte forma:\n"
-				+ "A + A.B =\n"
-				+ "A . (1 + B) = \n"
-				+ "A . 1 = \n"
-				+ "A\n"
+
+		System.out.println("A simplificação da expressão A + A.B, ficaria da seguinte forma:\n" + "A + A.B =\n"
+				+ "A . (1 + B) = \n" + "A . 1 = \n" + "A\n"
 				+ "Neste caso foram utilizados a propriedade distributiva e o postulado de adição.\n");
-		
-		
+
 	}
-	
-	
+
 	static int fdesafio5() {
-		
-		int contador=0, ponto=3;
-		
+
+		int contador = 0, ponto = 3;
+
 		String resposta;
-		
-		System.out.print("5º Desafio.\n"
-				+ "\n");
-		
+
+		System.out.print("5º Desafio.\n" + "\n");
+
 		exdesafio5();
 		System.out.println("\n");
-		
+
 		System.out.print("Para vencer a quinta partida, você terá que simplificar\n"
-				+ "a seguinte expressão booleana.\n"
-				+ "\n");
-		
-		System.out.print("A.B.C + A.C' + A.B\n"
-				+ "\n");
-		
+				+ "a seguinte expressão booleana.\n" + "\n");
+
+		System.out.print("A.B.C + A.C' + A.B\n" + "\n");
+
 		boolean acertou = false;
-		
+
 		List alternativas = new ArrayList();
-		
+
 		alternativas.add("A"); // resposta correta
 		alternativas.add("A.B'");
 		alternativas.add("A.C'");
 		alternativas.add("A'");
 		alternativas.add("A'.B'");
-		
+
 		do {
 			contador++;
-							
+
 			Collections.shuffle(alternativas);
 			System.out.println("A resposta correta é:");
 			System.out.println("a) " + alternativas.get(0));
@@ -591,92 +1111,86 @@ public class rpg {
 			System.out.println("c) " + alternativas.get(2));
 			System.out.println("d) " + alternativas.get(3));
 			System.out.println("e) " + alternativas.get(4));
-			
+
 			System.out.print("Escolha uma alternativa: ");
 			resposta = input.next();
-			
-			
+
 			switch (resposta) {
 			case "a":
 			case "A":
-			if (alternativas.get(0).equals("A")) {
-			System.out.println("Resposta correta! " + contador + "ª tentativa");
-			acertou = true;
-			} else {
-			System.out.println("Resposta incorreta!");
-			feedbacknegativo();
-			ponto--;
-			}
-			break;
+				if (alternativas.get(0).equals("A")) {
+					System.out.println("Resposta correta! " + contador + "ª tentativa");
+					acertou = true;
+				} else {
+					System.out.println("Resposta incorreta!");
+					feedbacknegativo();
+					ponto--;
+				}
+				break;
 			case "b":
 			case "B":
-			if (alternativas.get(1).equals("A")) {
-			System.out.println("Resposta correta! "  + contador + "ª tentativa");
-			acertou = true;
-			} else {
-			System.out.println("Resposta incorreta!");
-			feedbacknegativo();
-			ponto--;
-			}
-			break;
+				if (alternativas.get(1).equals("A")) {
+					System.out.println("Resposta correta! " + contador + "ª tentativa");
+					acertou = true;
+				} else {
+					System.out.println("Resposta incorreta!");
+					feedbacknegativo();
+					ponto--;
+				}
+				break;
 			case "c":
 			case "C":
-			if (alternativas.get(2).equals("A")) {
-			System.out.println("Resposta correta! "  + contador + "ª tentativa");
-			acertou = true;
-			} else {
-			System.out.println("Resposta incorreta!");
-			feedbacknegativo();
-			ponto--;
-			}
-			break;
+				if (alternativas.get(2).equals("A")) {
+					System.out.println("Resposta correta! " + contador + "ª tentativa");
+					acertou = true;
+				} else {
+					System.out.println("Resposta incorreta!");
+					feedbacknegativo();
+					ponto--;
+				}
+				break;
 			case "d":
 			case "D":
-			if (alternativas.get(3).equals("A")) {
-			System.out.println("Resposta correta! "  + contador + "ª tentativa");
-			acertou = true;
-			} else {
-			System.out.println("Resposta incorreta!");
-			feedbacknegativo();
-			ponto--;
-			}
-			break;
+				if (alternativas.get(3).equals("A")) {
+					System.out.println("Resposta correta! " + contador + "ª tentativa");
+					acertou = true;
+				} else {
+					System.out.println("Resposta incorreta!");
+					feedbacknegativo();
+					ponto--;
+				}
+				break;
 			case "e":
 			case "E":
-			if (alternativas.get(4).equals("A")) {
-			System.out.println("Resposta correta! " + contador + "ª tentativa");
-			acertou = true;
-			} else {
-			System.out.println("Resposta incorreta!");
-			feedbacknegativo();
-			ponto--;
-			}
-			break;
+				if (alternativas.get(4).equals("A")) {
+					System.out.println("Resposta correta! " + contador + "ª tentativa");
+					acertou = true;
+				} else {
+					System.out.println("Resposta incorreta!");
+					feedbacknegativo();
+					ponto--;
+				}
+				break;
 			default:
-			System.out.println("Escolha inválida!");
+				System.out.println("Escolha inválida!");
 			}
 
-		
-		} while (!acertou && contador!=3);
-		
-		if (contador==3 && ponto==0) {
+		} while (!acertou && contador != 3);
+
+		if (contador == 3 && ponto == 0) {
 			System.out.println("Você errou as três tentativas");
 			System.out.print("Você somou " + ponto + " pontos.");
-			ponto=0;
+			ponto = 0;
 		}
-		
+
 		return contador;
 	}
-	
-	
-	
-	
+
 	// ******PAULO******//
 	static Scanner ler = new Scanner(System.in);
 	private static int resultado;
 
-	
-	//EXERCÍCIO 2
+	// EXERCÍCIO 2
 	static int ex2() {
 
 		List numeros = new ArrayList();
@@ -1277,7 +1791,7 @@ public class rpg {
 		return resultado;
 	}
 
-	//EXERCÍCIO 8
+	// EXERCÍCIO 8
 	static int ex8() {
 
 		List numeros = new ArrayList();
@@ -1440,10 +1954,6 @@ public class rpg {
 		return resultado;
 	}
 
-	
-	
-	
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -1451,11 +1961,8 @@ public class rpg {
 		// variável op é a variável que vai dar a opção desejada no menu.
 		int op;
 		String name, clube;
-		
 
 		introdução();
-
-
 
 		do {
 
@@ -1490,86 +1997,67 @@ public class rpg {
 				break;
 			case 3:
 				// ir para o jogo
-				
-				int pontuacaoDesafio1,pontuacaoDesafio2,pontuacaoDesafio3,pontuacaoDesafio4,pontuacaoDesafio5,pontuacaoDesafio6,pontuacaoDesafio7,pontuacaoDesafio8,pontuacaoDesafio9,pontuacaoDesafio10;
+
+				int pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5,
+						pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8, pontuacaoDesafio9, pontuacaoDesafio10;
 				int pontuacaoCampeonato;
-				
+
 				System.out.println("\nVamos jogar\n" + "\n");
 				name = nomejogador();
 				clube = nometime();
 				historiadesafio1();
-				
-				//********DESAFIO 1**********
-				pontuacaoDesafio1=fExemploDesafio01();
-				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
-				
-				
-				//********DESAFIO 2**********
-				pontuacaoDesafio2=ex2();
-				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, 0, 0, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
-				
-				
-				
-				//********DESAFIO 3**********
+
+				// ********DESAFIO 1**********
+				pontuacaoDesafio1 = fExemploDesafio01();
+				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+
+				// ********DESAFIO 2**********
+				pontuacaoDesafio2 = ex2();
+				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, 0, 0, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+
+				// ********DESAFIO 3**********
 				pontuacaoDesafio3 = fdesafio3();
-				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, 0, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
-				
-				
-				//********DESAFIO 4**********
+				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, 0, 0, 0, 0, 0,
+						0, 0);
+				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+
+				// ********DESAFIO 4**********
 				exemploTabelaVerdade();
-				janelaTabelaVerdade.main(null);
-				pontuacaoDesafio4=janelaTabelaVerdade.contador;
-				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
-				
-				
-				//********DESAFIO 5**********
+				//janelaTabelaVerdade.main(null);
+				pontuacaoDesafio4 = fDesafio04();
+				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+						pontuacaoDesafio4, 0, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+
+				// ********DESAFIO 5**********
 				historiadesafio5();
 				exdesafio5();
 				pontuacaoDesafio5 = fdesafio5();
-				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
-			
-				
-				
-				//********DESAFIO 6**********
-				
-				
-				
-				
-				//********DESAFIO 7**********
-				
-				
-				
-				
-				
-				
-				//********DESAFIO 8**********
-				pontuacaoDesafio8=ex8();
-				pontuacaoCampeonato=pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, pontuacaoDesafio8, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d\r\n",pontuacaoCampeonato);
-				
-				
-				
-				//********DESAFIO 9**********
-				
-				
-				
-				
-				
-				//********DESAFIO 10**********
-				
-				
-				
-				
+				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+						pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, 0, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+
+				// ********DESAFIO 6**********
+
+				// ********DESAFIO 7**********
+
+				// ********DESAFIO 8**********
+				pontuacaoDesafio8 = ex8();
+				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+						pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, pontuacaoDesafio8, 0, 0);
+				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+
+				// ********DESAFIO 9**********
+
+				// ********DESAFIO 10**********
+
 				break;
-				
+
 			case 4:
-				//Aqui é a saida do jogo.
-				
+				// Aqui é a saida do jogo.
+
 				break;
 			default:
 				System.out.println("Opção inválida, tente novamente.");
