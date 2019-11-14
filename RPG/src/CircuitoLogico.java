@@ -26,6 +26,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JTabbedPane;
 import javax.swing.JToolBar;
+import java.awt.Dimension;
 
 public class CircuitoLogico extends JFrame {
 
@@ -42,6 +43,7 @@ public class CircuitoLogico extends JFrame {
 					CircuitoLogico frame = new CircuitoLogico();
 					frame.setVisible(true);
 					frame.setAlwaysOnTop(true);
+					frame.setLocationRelativeTo(null);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -74,14 +76,59 @@ public class CircuitoLogico extends JFrame {
 		JLabel lblPortaNand = new JLabel("Porta NAND");
 		lblPortaNand.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblPortaNand.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPortaNand.setBounds(12, 23, 81, 16);
+		lblPortaNand.setBounds(85, 186, 81, 16);
 		panel.add(lblPortaNand);
 		
 		JLabel lblPortaNand_1 = new JLabel("");
 		lblPortaNand_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPortaNand_1.setIcon(new ImageIcon("C:\\Users\\joaom\\Desktop\\porta and.jpg"));
-		lblPortaNand_1.setBounds(46, 65, 250, 170);
+		lblPortaNand_1.setBounds(68, 215, 118, 86);
+		ImageIcon portaNAND = new ImageIcon(CircuitoLogico.class.getResource("/Imagens/porta nand.jpg"));
+		portaNAND.setImage(portaNAND.getImage().getScaledInstance(lblPortaNand_1.getWidth(),lblPortaNand_1.getHeight(), 1));
+		lblPortaNand_1.setIcon(portaNAND);
 		panel.add(lblPortaNand_1);
+		
+		JLabel lblSadaCab = new JLabel("Saída: D=(A*B)'");
+		lblSadaCab.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSadaCab.setBounds(68, 313, 118, 16);
+		panel.add(lblSadaCab);
+		
+		JLabel label = new JLabel("");
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		label.setBounds(68, 42, 118, 86);
+		ImageIcon portaAND = new ImageIcon(CircuitoLogico.class.getResource("/Imagens/porta and2.jpg"));
+		portaAND.setImage(portaAND.getImage().getScaledInstance(label.getWidth(),label.getHeight(), 1));
+		label.setIcon(portaAND);
+		panel.add(label);
+		
+		JLabel lblPortaAnd = new JLabel("Porta AND");
+		lblPortaAnd.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPortaAnd.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblPortaAnd.setBounds(86, 13, 81, 16);
+		panel.add(lblPortaAnd);
+		
+		JLabel lblSadaDab = new JLabel("Saída: C=A*B");
+		lblSadaDab.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSadaDab.setBounds(68, 140, 118, 16);
+		panel.add(lblSadaDab);
+		
+		JLabel label_1 = new JLabel("");
+		label_1.setHorizontalAlignment(SwingConstants.CENTER);
+		label_1.setBounds(221, 42, 118, 86);
+		ImageIcon portaOR = new ImageIcon(CircuitoLogico.class.getResource("/Imagens/porta OU.jpg"));
+		portaOR.setImage(portaOR.getImage().getScaledInstance(label_1.getWidth(),label_1.getHeight(), 1));
+		label_1.setIcon(portaOR);
+		panel.add(label_1);
+		
+		JLabel lblPortaOr = new JLabel("Porta OR");
+		lblPortaOr.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPortaOr.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblPortaOr.setBounds(239, 13, 81, 16);
+		panel.add(lblPortaOr);
+		
+		JLabel lblSadaCab_1 = new JLabel("Saída: C=A+B");
+		lblSadaCab_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSadaCab_1.setBounds(221, 140, 118, 16);
+		panel.add(lblSadaCab_1);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setEnabled(false);
@@ -96,9 +143,14 @@ public class CircuitoLogico extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setBounds(63, 87, 507, 172);
+		lblNewLabel_1.setBounds(63, 87, 511, 191);
 		panel_1.add(lblNewLabel_1);
-		lblNewLabel_1.setIcon(new ImageIcon("D:\\joaom\\Pictures\\Circuito logico.jpg"));
+		ImageIcon circuito = new ImageIcon(CircuitoLogico.class.getResource("/Imagens/Circuito logico.jpg"));
+		circuito.setImage(circuito.getImage().getScaledInstance(
+				lblNewLabel_1.getWidth(), 
+				lblNewLabel_1.getHeight(), 
+				1));
+		lblNewLabel_1.setIcon(circuito);
 	
 		
 
@@ -113,7 +165,7 @@ public class CircuitoLogico extends JFrame {
 
 		Collections.shuffle(alternativas);
 
-		System.out.println("funcionou!");
+		//System.out.println("funcionou!");
 
 	}
 }
