@@ -945,7 +945,7 @@ public class rpg {
 			ponto = 0;
 		}
 
-		return contador;
+		return ponto;
 	}
 
 	// EXERCÍCIO 5
@@ -1090,7 +1090,7 @@ public class rpg {
 			ponto = 0;
 		}
 
-		return contador;
+		return ponto;
 	}
 
 	// EXERCICIO 7
@@ -1255,7 +1255,7 @@ public class rpg {
 			ponto = 0;
 		}
 
-		return contador;
+		return ponto;
 	}
 
 	// EXERCICIO 9
@@ -1894,7 +1894,7 @@ public class rpg {
 
 		} while (contN != 3 && saida);
 
-		return resultado;
+		return ponto;
 	}
 
 	// ******PAULO******//
@@ -2499,7 +2499,7 @@ public class rpg {
 				}
 			} while (contN != 3 && saida);
 		}
-		return resultado;
+		return ponto;
 	}
 
 	// EXERCÍCIO 8
@@ -2662,7 +2662,7 @@ public class rpg {
 
 		} while (contN != 3 && saida);
 
-		return resultado;
+		return ponto;
 	}
 
 	// EXERCICIO 10
@@ -3123,7 +3123,7 @@ public class rpg {
 
 		} while (contN != 6 && saida);
 
-		return resultado;
+		return ponto;
 	}
 
 	public static void main(String[] args) {
