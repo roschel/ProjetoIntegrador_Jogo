@@ -397,7 +397,7 @@ public class janelaTabelaVerdade {
 				
 				frame.setVisible(false);
 				
-				rpg.exemploTabelaVerdade();
+				//rpg.exemploTabelaVerdade();
 				
 				System.out.println("Gostaria de tentar novamente?");
 				opcao=sc.next();
