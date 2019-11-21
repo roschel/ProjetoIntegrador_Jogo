@@ -122,10 +122,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n\n");
 						System.out.println("\nPara converter um número binário para um número decimal, é necessário:\n"
 								+ "Utilizar a tabela de potências de 2:\n"
@@ -158,10 +158,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n\n");
 						System.out.println("\nPara converter um número binário para um número decimal, é necessário:\n"
 								+ "Utilizar a tabela de potências de 2:\n"
@@ -194,10 +194,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n\n");
 						System.out.println("\nPara converter um número binário para um número decimal, é necessário:\n"
 								+ "Utilizar a tabela de potências de 2:\n"
@@ -230,10 +230,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n\n");
 						System.out.println("\nPara converter um número binário para um número decimal, é necessário:\n"
 								+ "Utilizar a tabela de potências de 2:\n"
@@ -266,10 +266,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n\n");
 						System.out.println("\nPara converter um número binário para um número decimal, é necessário:\n"
 								+ "Utilizar a tabela de potências de 2:\n"
@@ -387,7 +387,7 @@ public class rpg {
 					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						System.out.println("\n" + "\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
 								+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
@@ -433,7 +433,7 @@ public class rpg {
 					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						System.out.println("\n" + "\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
 								+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
@@ -479,7 +479,7 @@ public class rpg {
 					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						System.out.println("\n" + "\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
 								+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
@@ -525,7 +525,7 @@ public class rpg {
 					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						System.out.println("\n" + "\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
 								+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
@@ -571,7 +571,7 @@ public class rpg {
 					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						System.out.println("\n" + "\n\nTabela verdade é um dispositivo utilizado no estudo da\r\n"
 								+ "lógica matemática. Com o uso desta tabela é possível definir o valor\r\n"
@@ -687,10 +687,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						exemploExercicio6();
 						CircuitoLogico.main(null);
@@ -719,10 +719,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						exemploExercicio6();
 						CircuitoLogico.main(null);
@@ -751,10 +751,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						exemploExercicio6();
 						CircuitoLogico.main(null);
@@ -783,10 +783,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						exemploExercicio6();
 						CircuitoLogico.main(null);
@@ -815,10 +815,10 @@ public class rpg {
 					saidaLoop = false;
 				} else {
 					contador++;
-					if (contador==3) {
+					if (contador == 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + nota1 + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta errada, tente novamente.\n");
 						exemploExercicio6();
 						CircuitoLogico.main(null);
@@ -852,6 +852,21 @@ public class rpg {
 		} while (saida);
 		System.out.println(" ");
 	}
+
+	// SITUAÇÃO NO CAMPEONATO
+	static void situacaoCampeonato(int pontos) {
+		if (pontos <= 10) {
+			System.out.printf("VOCÊ FOI REBAIXADO!\n");
+		} else if (pontos>=11 || pontos<=19){
+			System.out.printf("VOCÊ CONSEGUIU SE MANTER NA PRIMEIRA DIVISÃO!\n");
+		}else if(pontos>=20 || pontos<=24) {
+			System.out.printf("PARABÉNS VOCÊ SE CLASSIFICOU PRO CAMPONATO INTERNACIONAL DE 2ª CLASSE!\n");
+		}else if(pontos>=25) {
+			System.out.printf("PARABÉNS VOCÊ SE CLASSIFICOU PRO CAMPONATO INTERNACIONAL DE 1ª CLASSE!\n");
+		}
+	}
+
+
 
 	// ******DANILO******//
 	static Scanner input = new Scanner(System.in);
@@ -949,10 +964,10 @@ public class rpg {
 		do {
 			contador++;
 			System.out.println("\n");
-			
+
 			System.out.print("Para vencer a terceira partida, você terá que acertar\n"
 					+ "a seguinte multiplicação de números binários.\n" + "\n");
-			
+
 			System.out.print("1101 x 1010\n" + "\n");
 
 			Collections.shuffle(alternativas);
@@ -975,10 +990,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						exdesafio3();
 					}
@@ -992,10 +1007,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						exdesafio3();
 					}
@@ -1009,10 +1024,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						exdesafio3();
 					}
@@ -1026,10 +1041,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						exdesafio3();
 					}
@@ -1043,10 +1058,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						exdesafio3();
 					}
@@ -1057,7 +1072,6 @@ public class rpg {
 			}
 
 		} while (!acertou && contador != 3);
-
 
 		return ponto;
 	}
@@ -1114,10 +1128,10 @@ public class rpg {
 		do {
 			contador++;
 			System.out.println("\n");
-			
+
 			System.out.print("Para vencer a quinta partida, você terá que simplificar\n"
 					+ "a seguinte expressão booleana.\n" + "\n");
-			
+
 			System.out.print("A.B.C + A.C' + A.B\n" + "\n");
 
 			Collections.shuffle(alternativas);
@@ -1140,10 +1154,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						feedbacknegativo();
 					}
@@ -1157,10 +1171,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						feedbacknegativo();
 					}
@@ -1174,10 +1188,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						feedbacknegativo();
 					}
@@ -1191,10 +1205,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						feedbacknegativo();
 					}
@@ -1208,10 +1222,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!\n");
 						feedbacknegativo();
 					}
@@ -1325,10 +1339,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!");
 						feedbacknegativoDesafio7();
 					}
@@ -1342,10 +1356,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!");
 						feedbacknegativoDesafio7();
 					}
@@ -1359,10 +1373,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!");
 						feedbacknegativoDesafio7();
 					}
@@ -1376,10 +1390,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!");
 						feedbacknegativoDesafio7();
 					}
@@ -1393,10 +1407,10 @@ public class rpg {
 					acertou = true;
 				} else {
 					ponto--;
-					if (contador>=3) {
+					if (contador >= 3) {
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Você somou " + ponto + " pontos.\n");
-					}else {
+					} else {
 						System.out.println("Resposta incorreta!");
 						feedbacknegativoDesafio7();
 					}
@@ -1439,8 +1453,6 @@ public class rpg {
 				+ " Um pouco mais abaixo tem alguns exemplos para te auxiliar na resolução do esquema. Boa sorte!!! \n"
 				+ "\n");
 
-
-
 		do {
 			String seguir = "Aceito";
 			String recusa = "Sair";
@@ -1479,7 +1491,7 @@ public class rpg {
 					case "A":
 						if (alternativas.get(0).equals("XY|Z" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
 								+ "10|0 1\n" + "S=XY+XZ\n")) {
-							
+
 							System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN
 									+ "ª tentativa e marcou " + ponto + " ponto(s). \n");
 							saida = false;
@@ -1492,7 +1504,7 @@ public class rpg {
 					case "B":
 						if (alternativas.get(1).equals("XY|Z\n" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
 								+ "10|0 1\n" + "S=XY+XZ\n")) {
-							
+
 							System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN
 									+ "ª tentativa e marcou " + ponto + " ponto(s). \n");
 							saida = false;
@@ -1505,7 +1517,7 @@ public class rpg {
 					case "C":
 						if (alternativas.get(2).equals("XY|Z\n" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
 								+ "10|0 1\n" + "S=XY+XZ\n")) {
-							
+
 							System.out.println("\n" + "GolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou "
 									+ ponto + " ponto(s). \n");
 							saida = false;
@@ -1518,7 +1530,7 @@ public class rpg {
 					case "D":
 						if (alternativas.get(3).equals("XY|Z\n" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
 								+ "10|0 1\n" + "S=XY+XZ\n")) {
-							
+
 							System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN
 									+ "ª tentativa e marcou " + ponto + " ponto(s). \n");
 							saida = false;
@@ -1531,7 +1543,7 @@ public class rpg {
 					case "E":
 						if (alternativas.get(4).equals("XY|Z\n" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
 								+ "10|0 1\n" + "S=XY+XZ")) {
-							
+
 							System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN
 									+ "ª tentativa e marcou " + ponto + " ponto(s). \n");
 							saida = false;
@@ -1555,7 +1567,7 @@ public class rpg {
 						System.out.println("");
 					}
 					if (contN == 3 && (!(n1.equals(alternativas)) && saida)) {
-						
+
 						System.out.println("Você errou as três tentativas\n");
 						System.out.print("Sua pontuação no desafio foi  " + ponto + " pontos.\n");
 					}
@@ -1601,8 +1613,6 @@ public class rpg {
 				+ "Um pouco mais abaixo tem alguns exemplos para te auxiliar na resolução do esquema. Boa sorte!!! \n"
 				+ "\n");
 
-		
-
 		String resposta = "Aceito";
 		System.out.println("\n" + "Digite ACEITO para começar o desafio");
 		String seguir = ler.next();
@@ -1641,7 +1651,7 @@ public class rpg {
 				case "a":
 				case "A":
 					if (numeros.get(0).equals("1010011")) {
-						
+
 						System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou "
 								+ ponto + " ponto(s). \n" + "\n");
 						saida = false;
@@ -1653,7 +1663,7 @@ public class rpg {
 				case "b":
 				case "B":
 					if (numeros.get(1).equals("1010011")) {
-						
+
 						System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou "
 								+ ponto + " ponto(s). \n" + "\n");
 						saida = false;
@@ -1665,7 +1675,7 @@ public class rpg {
 				case "c":
 				case "C":
 					if (numeros.get(2).equals("1010011")) {
-						
+
 						System.out.println("\n" + "GolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou "
 								+ ponto + " ponto(s). \n" + "\n");
 						saida = false;
@@ -1677,7 +1687,7 @@ public class rpg {
 				case "d":
 				case "D":
 					if (numeros.get(3).equals("1010011")) {
-						
+
 						System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou "
 								+ ponto + " ponto(s). \n" + "\n");
 						saida = false;
@@ -1689,7 +1699,7 @@ public class rpg {
 				case "e":
 				case "E":
 					if (numeros.get(4).equals("1010011")) {
-						
+
 						System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou "
 								+ ponto + " ponto(s). \n" + "\n");
 						saida = false;
@@ -1713,7 +1723,7 @@ public class rpg {
 					System.out.println("");
 				}
 				if (contN == 3 && (!(n1.equals(numeros)) && saida)) {
-					
+
 					System.out.println("\n" + "Você errou as três tentativas!! \n"
 							+ "Acho que você não entendeu a jogada! Infelizmente não marcou pontos nessa rodada! \n"
 							+ "Tente a próxima!");
@@ -2182,7 +2192,7 @@ public class rpg {
 
 						System.out.println("\n" + "Você errou as três tentativas!! \n"
 								+ "Acho que você não entendeu a tabela! Infelizmente não marcou pontos nessa rodada! \n");
-						//break;
+						// break;
 					}
 				} while (contN < 3 && saida);
 			}
@@ -2352,6 +2362,8 @@ public class rpg {
 						pontuacaoDesafio9, pontuacaoDesafio10);
 				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
 				
+				situacaoCampeonato(pontuacaoCampeonato);
+
 				break;
 
 			case 4:
