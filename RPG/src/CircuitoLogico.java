@@ -58,13 +58,13 @@ public class CircuitoLogico extends JFrame {
 	// RESPOSTA DO EXERCICIO
 	// S = ((AC)'+B+D)' + (ACD)' * C
 	public CircuitoLogico() {
-		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 726, 726);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-				
+			
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(0, 0, 708, 679);
 		contentPane.add(tabbedPane);
