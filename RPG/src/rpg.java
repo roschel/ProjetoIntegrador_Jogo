@@ -857,9 +857,9 @@ public class rpg {
 	static void situacaoCampeonato(int pontos) {
 		if (pontos <= 10) {
 			System.out.printf("VOCÊ FOI REBAIXADO!\n");
-		} else if (pontos>=11 || pontos<=19){
+		} else if (pontos>=11 && pontos<=19){
 			System.out.printf("VOCÊ CONSEGUIU SE MANTER NA PRIMEIRA DIVISÃO!\n");
-		}else if(pontos>=20 || pontos<=24) {
+		}else if(pontos>=20 && pontos<=24) {
 			System.out.printf("PARABÉNS VOCÊ SE CLASSIFICOU PRO CAMPONATO INTERNACIONAL DE 2ª CLASSE!\n");
 		}else if(pontos>=25) {
 			System.out.printf("PARABÉNS VOCÊ SE CLASSIFICOU PRO CAMPONATO INTERNACIONAL DE 1ª CLASSE!\n");
@@ -1489,7 +1489,7 @@ public class rpg {
 					switch (n1) {
 					case "a":
 					case "A":
-						if (alternativas.get(0).equals("XY|Z" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
+						if (alternativas.get(0).equals("XY|Z\n" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
 								+ "10|0 1\n" + "S=XY+XZ\n")) {
 
 							System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN
@@ -1542,7 +1542,7 @@ public class rpg {
 					case "e":
 					case "E":
 						if (alternativas.get(4).equals("XY|Z\n" + "   0 1\n" + "00|0 0\n" + "01|0 0\n" + "11|1 1\n"
-								+ "10|0 1\n" + "S=XY+XZ")) {
+								+ "10|0 1\n" + "S=XY+XZ\n")) {
 
 							System.out.println("\n" + "GoolaAaAaço!!! Você acertou na " + contN
 									+ "ª tentativa e marcou " + ponto + " ponto(s). \n");
@@ -1875,12 +1875,15 @@ public class rpg {
 
 	// EXERCICIO 10
 	private static boolean loop;
+	private static char[] pontofinal;
 
 	static int ex10(String nome, String time) {
 
 		int i = 0;
 		int contN = 0;
-		int ponto = 6;
+		int ponto = 3;
+		int ponto2 = 3;
+		int pontofinal = 0;
 		String n1 = null;
 		boolean saida = true;
 		int l1, l2, l3, l4;
@@ -1984,7 +1987,6 @@ public class rpg {
 
 					System.out.println("");
 					if (l1 == vetor1[0] && l2 == vetor1[1] && l3 == vetor1[2] && l4 == vetor1[3] && contN <= 3) {
-						contN--;
 						// System.out.println("\n" +
 						// "GoolaAaAaço!!! Você acertou na " + contN + "ª tentativa e marcou " + ponto +
 						// " ponto(s). \n" +
@@ -1996,15 +1998,20 @@ public class rpg {
 										+ "** MAPA DE KARNAUGH**\\n \" +				           \r\n" + " ____ C \n"
 										+ " A B | 0 | 1 \n" + "------------- \n" + " 0 0 | 1 | 1  \n"
 										+ " 0 1 | 1 | 1  \n" + " 1 1 | 0 | 0  \n" + " 1 0 | 1 | 1  \n" + "\n");
+						System.out.println(
+								" Legal, você já conseguiu ajudar a maioria dos jogadores mas, ainda falta uma parte, lembra? \n"
+										+ "Para completar o desafio, indique a expressão booleana que representa o mapa acima: \n"
+										+ "\n");
+						System.out.println("\n" + "GoolaAaAaço!!! Você acertou. Precisou de " + contN
+								+ " tentativas para finalizar. \n" + "Marcou " + ponto + " ponto(s). \n");
+						
+						contN=1;
 						do {
-
-							contN++;
 							Collections.shuffle(opcao);
-
-							System.out.println(
-									" Legal, você já conseguiu ajudar a maioria dos jogadores mas, ainda falta uma parte, lembra? \n"
-											+ "Para completar o desafio, indique a expressão booleana que representa o mapa acima: \n"
-											+ "\n");
+							
+							System.out.println("** MAPA DE KARNAUGH**\\n \" +				           \r\n" + " ____ C \n"
+											+ " A B | 0 | 1 \n" + "------------- \n" + " 0 0 | 1 | 1  \n"
+											+ " 0 1 | 1 | 1  \n" + " 1 1 | 0 | 0  \n" + " 1 0 | 1 | 1  \n" + "\n");
 							System.out.print("RESPONDA \n"
 									+ "Qual é a expressão booleana que representa a tabela verdade acima? \n" + "\n"
 									+ "a) " + opcao.get(0) + "\n" + "b) " + opcao.get(1) + "\n" + "c) " + opcao.get(2)
@@ -2017,10 +2024,10 @@ public class rpg {
 							case "A":
 								if (opcao.get(0).equals("S = A' + B'")) {
 									System.out.println("\n" + "GoolaAaAaço!!! Você acertou. Precisou de " + contN
-											+ " tentativas para finalizar. \n" + "Marcou " + ponto + " ponto(s). \n");
+											+ " tentativas para finalizar. \n" + "Marcou " + ponto2 + " ponto(s). \n");
 									saida = false;
 								} else {
-									ponto--;
+									ponto2--;
 									System.out.println("RESPOSTA ERRADA");
 								}
 								break;
@@ -2029,10 +2036,10 @@ public class rpg {
 								if (opcao.get(1).equals("S = A' + B'")) {
 
 									System.out.println("\n" + "GoolaAaAaço!!! Você acertou. Precisou de " + contN
-											+ " tentativas para finalizar. \n" + "Marcou " + ponto + " ponto(s). \n");
+											+ " tentativas para finalizar. \n" + "Marcou " + ponto2 + " ponto(s). \n");
 									saida = false;
 								} else {
-									ponto--;
+									ponto2--;
 									System.out.println("RESPOSTA ERRADA");
 								}
 								break;
@@ -2040,10 +2047,10 @@ public class rpg {
 							case "C":
 								if (opcao.get(2).equals("S = A' + B'")) {
 									System.out.println("\n" + "GoolaAaAaço!!! Você acertou. Precisou de " + contN
-											+ " tentativas para finalizar. \n" + "Marcou " + ponto + " ponto(s). \n");
+											+ " tentativas para finalizar. \n" + "Marcou " + ponto2 + " ponto(s). \n");
 									saida = false;
 								} else {
-									ponto--;
+									ponto2--;
 									System.out.println("RESPOSTA ERRADA");
 								}
 								break;
@@ -2051,10 +2058,10 @@ public class rpg {
 							case "D":
 								if (opcao.get(3).equals("S = A' + B'")) {
 									System.out.println("\n" + "GoolaAaAaço!!! Você acertou. Precisou de " + contN
-											+ " tentativas para finalizar. \n" + "Marcou " + ponto + " ponto(s). \n");
+											+ " tentativas para finalizar. \n" + "Marcou " + ponto2 + " ponto(s). \n");
 									saida = false;
 								} else {
-									ponto--;
+									ponto2--;
 									System.out.println("RESPOSTA ERRADA");
 								}
 								break;
@@ -2062,16 +2069,17 @@ public class rpg {
 							case "E":
 								if (opcao.get(4).equals("S = A' + B'")) {
 									System.out.println("\n" + "GoolaAaAaço!!! Você acertou. Precisou de " + contN
-											+ " tentativas para finalizar. \n" + "Marcou " + ponto + " ponto(s). \n");
+											+ " tentativas para finalizar. \n" + "Marcou " + ponto2 + " ponto(s). \n");
 									saida = false;
 								} else {
-									ponto--;
+									ponto2--;
 									System.out.println("RESPOSTA ERRADA");
 									break;
 								}
 							}
 
 							if (contN == 1 && (!(n1.equals(opcao)) && saida)) {
+								
 								System.out.println("Olhe o mapa novamente. Talvez você não tenha entendido! \n");
 								System.out.println("			******** EXEMPLO ********\n" + "\n"
 										+ "      **TABELA VERDADE**                        ** MAPA DE KARNAUGH**\n "
@@ -2091,6 +2099,7 @@ public class rpg {
 							}
 
 							if (contN == 2 && (!(n1.equals(opcao)) && saida)) {
+								
 								System.out.println("Olhe o mapa novamente. Talvez você não tenha entendido! \n");
 								System.out.println("			******** EXEMPLO ********\n" + "\n"
 										+ "      **TABELA VERDADE**                        ** MAPA DE KARNAUGH**\n "
@@ -2108,64 +2117,8 @@ public class rpg {
 								String seguir6 = ler.next();
 								System.out.println("\n");
 							}
-							if (contN == 3 && (!(n1.equals(opcao)) && saida)) {
-								System.out.println(
-										"Você tem outra chance. Olhe mapa mais uma vez e tente novamente. !!ATENÇÃO!! \n");
-								System.out.println("			******** EXEMPLO ********\n" + "\n"
-										+ "      **TABELA VERDADE**                        ** MAPA DE KARNAUGH**\n "
-										+ "                                                   ____ C\n"
-										+ "	A | B | C | S                               A B | 0 | 1\n"
-										+ "	---------------                            -------------\n"
-										+ "	0 | 0 | 0 | 1                               0 0 | 1 | 0  \n"
-										+ "	0 | 0 | 1 | 0                               0 1 | 0 | 1  \n"
-										+ "	0 | 1 | 0 | 0                               1 1 | 0 | 1  \n"
-										+ "	0 | 1 | 1 | 1                               1 0 | 0 | 1  \n"
-										+ "	1 | 0 | 0 | 0 \n" + "	1 | 0 | 1 | 1 \n"
-										+ "	1 | 1 | 0 | 0                          ** EXPRESSÃO BOOLEANA ** \n"
-										+ "	1 | 1 | 1 | 1                          S = A'.B'.C' + B.C + A.C\n"
-										+ "Digite NOVO para ver a tabela e ter uma nova tentativa.");
-								String seguir7 = ler.next();
-								System.out.println("");
-							}
-							if (contN == 4 && (!(n1.equals(opcao)) && saida)) {
-								System.out.println("Hum..tem algo errado! Você esta olhando o mapa certo?. \n"
-										+ "Olhe o mapa e tente novamente. !!ATENÇÃO!! \n");
-								System.out.println("			******** EXEMPLO ********\n" + "\n"
-										+ "      **TABELA VERDADE**                        ** MAPA DE KARNAUGH**\n "
-										+ "                                                   ____ C\n"
-										+ "	A | B | C | S                               A B | 0 | 1\n"
-										+ "	---------------                            -------------\n"
-										+ "	0 | 0 | 0 | 1                               0 0 | 1 | 0  \n"
-										+ "	0 | 0 | 1 | 0                               0 1 | 0 | 1  \n"
-										+ "	0 | 1 | 0 | 0                               1 1 | 0 | 1  \n"
-										+ "	0 | 1 | 1 | 1                               1 0 | 0 | 1  \n"
-										+ "	1 | 0 | 0 | 0 \n" + "	1 | 0 | 1 | 1 \n"
-										+ "	1 | 1 | 0 | 0                          ** EXPRESSÃO BOOLEANA ** \n"
-										+ "	1 | 1 | 1 | 1                          S = A'.B'.C' + B.C + A.C\n"
-										+ "Digite NOVO para ver a tabela e ter uma nova tentativa.");
-								String seguir7 = ler.next();
-								System.out.println("");
-							}
-							if (contN == 5 && (!(n1.equals(opcao)) && saida)) {
-								System.out.println(
-										"Você tem uma última chance. Olhe o mapa mais uma vez e tente novamente. !!ATENÇÃO!! \n");
-								System.out.println("			******** EXEMPLO ********\n" + "\n"
-										+ "      **TABELA VERDADE**                        ** MAPA DE KARNAUGH**\n "
-										+ "                                                   ____ C\n"
-										+ "	A | B | C | S                               A B | 0 | 1\n"
-										+ "	---------------                            -------------\n"
-										+ "	0 | 0 | 0 | 1                               0 0 | 1 | 0  \n"
-										+ "	0 | 0 | 1 | 0                               0 1 | 0 | 1  \n"
-										+ "	0 | 1 | 0 | 0                               1 1 | 0 | 1  \n"
-										+ "	0 | 1 | 1 | 1                               1 0 | 0 | 1  \n"
-										+ "	1 | 0 | 0 | 0 \n" + "	1 | 0 | 1 | 1 \n"
-										+ "	1 | 1 | 0 | 0                          ** EXPRESSÃO BOOLEANA ** \n"
-										+ "	1 | 1 | 1 | 1                          S = A'.B'.C' + B.C + A.C\n"
-										+ "Digite NOVO para ver a tabela e ter uma nova tentativa.");
-								String seguir7 = ler.next();
-								System.out.println("");
-							}
-						} while (contN < 6 && saida);
+							contN++;
+						} while (contN <= 3 && saida);
 					}
 
 					if (contN == 1 && (!(l1 == vetor1[0] && l2 == vetor1[1] && l3 == vetor1[2] && l4 == vetor1[3]))
@@ -2186,15 +2139,16 @@ public class rpg {
 						String seguir7 = ler.next();
 						System.out.println("");
 					}
-					if (contN == 3
-							&& (!(l1 == vetor1[0] && l2 == vetor1[1] && l3 == vetor1[2] && l4 == vetor1[3]) && saida)
+					if (contN == 3 && (!(l1 == vetor1[0] && l2 == vetor1[1] && l3 == vetor1[2] && l4 == vetor1[3]) && saida)
 							|| contN == 6 && (!(n1.equals(opcao)) && saida)) {
-
+						ponto--;
 						System.out.println("\n" + "Você errou as três tentativas!! \n"
-								+ "Acho que você não entendeu a tabela! Infelizmente não marcou pontos nessa rodada! \n");
+								+ "Acho que você não entendeu a tabela! Talvez você não tenha marcado pontos nessa rodada! \n");
+						saida=false;
 						// break;
 					}
-				} while (contN < 3 && saida);
+					
+				} while (contN <= 3 && saida);
 			}
 			if (resposta.equalsIgnoreCase(recusa)) {
 				System.out.println("Você saiu do jogo");
@@ -2205,8 +2159,12 @@ public class rpg {
 			}
 
 		} while (contN < 3 && saida);
-
-		return ponto;
+		if (ponto==0) {
+			ponto2=0;
+		}
+		pontofinal = ponto + ponto2;
+		System.out.println(pontofinal);
+		return pontofinal;
 	}
 
 	public static void main(String[] args) {
@@ -2272,97 +2230,97 @@ public class rpg {
 				historiadesafio1(name, clube);
 
 				// ********DESAFIO 1**********
-				pontuacaoDesafio1 = fExemploDesafio01();
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 2**********
-				pontuacaoDesafio2 = ex2(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, 0, 0, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 3**********
-				pontuacaoDesafio3 = fdesafio3(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, 0, 0, 0, 0, 0,
-						0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 4**********
-				// janelaTabelaVerdade.main(null);
-				pontuacaoDesafio4 = fDesafio04(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, 0, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 5**********
-				historiadesafio5(name, clube);
-				// exdesafio5();
-				pontuacaoDesafio5 = fdesafio5();
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 6**********
-				// exemploExercicio6();
-				pontuacaoDesafio6 = fDesafio06(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, 0, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 7**********
-				pontuacaoDesafio7 = ex9(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, 0, 0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 8**********
-				pontuacaoDesafio8 = ex8(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8,
-						0, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
-				// ********DESAFIO 9**********
-				String n;
-				pontuacaoDesafio9 = 0;
-				historiadesafio7(name, clube);
-				exdesafio7();
-				System.out.println(
-						"Você entendeu a explicação do desafio? Em caso positivo, responda Sim para que possamos dirigi-lo\n"
-								+ "para o desafio. Em caso negativo, digite Não para que possamos repetir a explicação.");
-				n = input.next();
-
-				if (n.equalsIgnoreCase("Sim") || n.equalsIgnoreCase("s") || n.equalsIgnoreCase("SIM")
-						|| n.equalsIgnoreCase("S")) {
-					pontuacaoDesafio9 = fdesafio7();
-				}
-				if (n.equalsIgnoreCase("Não") || n.equalsIgnoreCase("n") || n.equalsIgnoreCase("NÃO")
-						|| n.equalsIgnoreCase("N")) {
-					exdesafio7();
-					;
-				}
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8,
-						pontuacaoDesafio9, 0);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
-				proximoDesafio();
-
+	//			pontuacaoDesafio1 = fExemploDesafio01();
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 2**********
+	//			pontuacaoDesafio2 = ex2(name, clube);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, 0, 0, 0, 0, 0, 0, 0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 3**********
+	//			pontuacaoDesafio3 = fdesafio3(name, clube);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3, 0, 0, 0, 0, 0,
+	//					0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 4**********
+	//			// janelaTabelaVerdade.main(null);
+	//			pontuacaoDesafio4 = fDesafio04(name, clube);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, 0, 0, 0, 0, 0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 5**********
+	//			historiadesafio5(name, clube);
+	//			// exdesafio5();
+	//			pontuacaoDesafio5 = fdesafio5();
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, pontuacaoDesafio5, 0, 0, 0, 0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 6**********
+	//			// exemploExercicio6();
+	//			pontuacaoDesafio6 = fDesafio06(name, clube);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, 0, 0, 0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 7**********
+	//			pontuacaoDesafio7 = ex9(name, clube);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, 0, 0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 8**********
+	//			pontuacaoDesafio8 = ex8(name, clube);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8,
+	//					0, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
+	//			// ********DESAFIO 9**********
+	//			String n;
+	//			pontuacaoDesafio9 = 0;
+	//			historiadesafio7(name, clube);
+	//			exdesafio7();
+	//			System.out.println(
+	//					"Você entendeu a explicação do desafio? Em caso positivo, responda Sim para que possamos dirigi-lo\n"
+	//							+ "para o desafio. Em caso negativo, digite Não para que possamos repetir a explicação.");
+	//			n = input.next();
+    //
+	//			if (n.equalsIgnoreCase("Sim") || n.equalsIgnoreCase("s") || n.equalsIgnoreCase("SIM")
+	//					|| n.equalsIgnoreCase("S")) {
+	//				pontuacaoDesafio9 = fdesafio7();
+	//			}
+	//			if (n.equalsIgnoreCase("Não") || n.equalsIgnoreCase("n") || n.equalsIgnoreCase("NÃO")
+	//					|| n.equalsIgnoreCase("N")) {
+	//				exdesafio7();
+	//				;
+	//			}
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8,
+	//					pontuacaoDesafio9, 0);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			proximoDesafio();
+    //
 				// ********DESAFIO 10**********
 				pontuacaoDesafio10 = ex10(name, clube);
-				pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
-						pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8,
-						pontuacaoDesafio9, pontuacaoDesafio10);
-				System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
+	//			pontuacaoCampeonato = pontuacao(pontuacaoDesafio1, pontuacaoDesafio2, pontuacaoDesafio3,
+	//					pontuacaoDesafio4, pontuacaoDesafio5, pontuacaoDesafio6, pontuacaoDesafio7, pontuacaoDesafio8,
+	//					pontuacaoDesafio9, pontuacaoDesafio10);
+	//			System.out.printf("Pontuação no campeonato: %d ponto(s)\r\n", pontuacaoCampeonato);
 				
-				situacaoCampeonato(pontuacaoCampeonato);
+	//			situacaoCampeonato(pontuacaoCampeonato);
 
 				break;
 
